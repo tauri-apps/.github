@@ -1,0 +1,16 @@
+
+name: On_Issue_Closed
+
+on:
+  issues:
+    types: [closed]
+    
+jobs:
+  run_tauri_bot_notify:
+    if: ${{ !github.event.issue.pull_request }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run tauri-bot notify action
+        run: |
+          gh auth login
+          gh wokflow run run.yml -f command=notify url=${{ github.event.issue.url }} --repo tauri-apps/bot
