@@ -1,1 +1,1 @@
-<img src="profile/intro.png" alt="Tauri" />
+![Tauri Banner](./intro.png)
