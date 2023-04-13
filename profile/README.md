@@ -1,1 +1,1 @@
-<img src="profile/intro.png" alt="Tauri" />
+<img src="profile/intro.jpg" alt="Tauri Apps, Build smaller, faster, and more secure desktop applications with a web frontend" />
